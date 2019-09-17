@@ -1,8 +1,8 @@
 package gql
 
 import (
-	"awesomeProject/flourish"
-	pb "awesomeProject/flourish/proto/item"
+	"awesomeProject/awesome"
+	pb "awesomeProject/awesome/proto/item"
 	"context"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/graph-gophers/graphql-go"
@@ -42,7 +42,7 @@ func NewResolver(itemClient pb.ItemResolverClient) *Resolver {
 }
 
 type ItemResolver struct {
-	I *flourish.Item
+	I *awesome.Item
 }
 
 // CreateItem Resolves the CreateItem mutation
@@ -61,7 +61,7 @@ func (r *Resolver) CreateItem(ctx context.Context, args struct {
 		return nil, err
 	}
 	t, _ := ptypes.Timestamp(res.CreatedAt)
-	item := &flourish.Item{
+	item := &awesome.Item{
 		ID:          res.Id,
 		Name:        res.Name,
 		Description: res.Description,
@@ -71,7 +71,7 @@ func (r *Resolver) CreateItem(ctx context.Context, args struct {
 	return &ItemResolver{I: item}, err
 }
 
-func (r *Resolver) Item(ctx context.Context, args flourish.Item) (*ItemResolver, error) {
+func (r *Resolver) Item(ctx context.Context, args awesome.Item) (*ItemResolver, error) {
 	request := &pb.QueryItemReq{
 		Id: args.ID,
 	}
@@ -81,7 +81,7 @@ func (r *Resolver) Item(ctx context.Context, args flourish.Item) (*ItemResolver,
 		return nil, err
 	}
 	t, _ := ptypes.Timestamp(res.CreatedAt)
-	item := &flourish.Item{
+	item := &awesome.Item{
 		ID:          res.Id,
 		Name:        res.Name,
 		Description: res.Description,

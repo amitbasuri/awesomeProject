@@ -4,9 +4,9 @@ import (
 	"github.com/RichardKnop/uuid"
 	"time"
 
-	"awesomeProject/flourish"
-	"awesomeProject/flourish/mongo"
-	pb "awesomeProject/flourish/proto/item"
+	"awesomeProject/awesome"
+	"awesomeProject/awesome/mongo"
+	pb "awesomeProject/awesome/proto/item"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/graph-gophers/graphql-go"
 	"golang.org/x/net/context"
@@ -44,7 +44,7 @@ func (svc *Server) Item(ctx context.Context, in *pb.QueryItemReq) (*pb.QueryItem
 }
 
 func (svc *Server) CreateItem(ctx context.Context, in *pb.CreateItemReq) (*pb.QueryItemRes, error) {
-	item := &flourish.Item{
+	item := &awesome.Item{
 		ID:          uuid.New(),
 		Name:        in.Name,
 		Description: in.Description,

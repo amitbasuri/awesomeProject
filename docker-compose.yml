@@ -2,7 +2,6 @@ version: "3"
 services:
   gql-server:
     network_mode: host
-
     build:
       context: .
       dockerfile: cmd/gqlServer/Dockerfile
@@ -15,8 +14,7 @@ services:
       context: .
       dockerfile: cmd/userService/Dockerfile
       args:
-        MONGO_CONNECT_STRING: mongodb://localhost/wmsight-devdb-copy
+        MONGO_CONNECT_STRING: ${MONGO_CONNECT_STRING}
     ports:
-      - "50051:50051" # Forward the exposed port 8080 on the container to port 8080 on the host machine
+      - "50051:50051"
     restart: on-failure
-

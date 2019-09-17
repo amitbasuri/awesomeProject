@@ -1,8 +1,8 @@
 package main
 
 import (
-	"awesomeProject/flourish/gql"
-	pb "awesomeProject/flourish/proto/item"
+	"awesomeProject/awesome/gql"
+	pb "awesomeProject/awesome/proto/item"
 	"github.com/graph-gophers/graphql-go"
 	"github.com/graph-gophers/graphql-go/relay"
 	"google.golang.org/grpc"

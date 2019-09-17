@@ -1,4 +1,4 @@
-package flourish
+package awesome
 
 import (
 	"github.com/graph-gophers/graphql-go"

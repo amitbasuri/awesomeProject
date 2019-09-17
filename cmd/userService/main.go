@@ -1,8 +1,8 @@
 package main
 
 import (
-	"awesomeProject/flourish/mongo"
-	"awesomeProject/flourish/proto/item"
+	"awesomeProject/awesome/mongo"
+	"awesomeProject/awesome/proto/item"
 	"fmt"
 	"google.golang.org/grpc"
 	"log"
