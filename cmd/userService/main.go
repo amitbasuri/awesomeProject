@@ -1,9 +1,9 @@
 package main
 
 import (
-	"awesomeProject/awesome/mongo"
-	"awesomeProject/awesome/proto/item"
 	"fmt"
+	"github.com/amitbasuri/awesomeProject/awesome/mongo"
+	"github.com/amitbasuri/awesomeProject/awesome/proto/item"
 	"google.golang.org/grpc"
 	"log"
 	"net"

@@ -1,7 +1,7 @@
 package mongo
 
 import (
-	"awesomeProject/awesome"
+	"github.com/amitbasuri/awesomeProject/awesome"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )

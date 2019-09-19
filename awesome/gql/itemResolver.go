@@ -1,9 +1,9 @@
 package gql
 
 import (
-	"awesomeProject/awesome"
-	pb "awesomeProject/awesome/proto/item"
 	"context"
+	"github.com/amitbasuri/awesomeProject/awesome"
+	pb "github.com/amitbasuri/awesomeProject/awesome/proto/item"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/graph-gophers/graphql-go"
 )

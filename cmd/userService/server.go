@@ -4,9 +4,9 @@ import (
 	"github.com/RichardKnop/uuid"
 	"time"
 
-	"awesomeProject/awesome"
-	"awesomeProject/awesome/mongo"
-	pb "awesomeProject/awesome/proto/item"
+	"github.com/amitbasuri/awesomeProject/awesome"
+	"github.com/amitbasuri/awesomeProject/awesome/mongo"
+	pb "github.com/amitbasuri/awesomeProject/awesome/proto/item"
 	"github.com/golang/protobuf/ptypes"
 	"github.com/graph-gophers/graphql-go"
 	"golang.org/x/net/context"

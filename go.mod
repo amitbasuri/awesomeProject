@@ -1,4 +1,4 @@
-module awesomeProject
+module github.com/amitbasuri/awesomeProject
 
 go 1.12
 
