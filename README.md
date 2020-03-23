@@ -1,4 +1,7 @@
 # awesomeProject
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/amitbasuri/awesomeProject) (https://goreportcard.com/report/github.com/amitbasuri/awesomeProject)
+
 A simple app of gRPC + GraphQL + Go + MongoDB.
 
 ## microservices:
